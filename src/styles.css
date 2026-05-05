@@ -1,0 +1,45 @@
+@import '@fontsource/ma-shan-zheng/chinese-simplified.css';
+@import '@fontsource/liu-jian-mao-cao/chinese-simplified.css';
+@import '@fontsource/long-cang/chinese-simplified.css';
+@import '@fontsource/zcool-xiaowei/chinese-simplified.css';
+@import '@fontsource/zcool-kuaile/chinese-simplified.css';
+@import '@fontsource/klee-one/japanese.css';
+@import '@fontsource/zen-kurenaido/japanese.css';
+@import 'lxgw-wenkai-webfont/lxgwwenkai-regular.css';
+@import 'lxgw-wenkai-screen-webfont/lxgwwenkaigbscreen.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #172033;
+  background: #f6f3ee;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.paper-preview {
+  aspect-ratio: 210 / 297;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+}

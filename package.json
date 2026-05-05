@@ -1,0 +1,44 @@
+{
+  "name": "hanzi-copybook-generator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare-data": "node scripts/copy-hanzi-data.mjs",
+    "postinstall": "npm run prepare-data",
+    "predev": "npm run prepare-data",
+    "prebuild": "npm run prepare-data",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/klee-one": "^5.2.8",
+    "@fontsource/liu-jian-mao-cao": "^5.2.8",
+    "@fontsource/long-cang": "^5.2.8",
+    "@fontsource/lxgw-wenkai": "^5.2.5",
+    "@fontsource/ma-shan-zheng": "^5.2.9",
+    "@fontsource/zcool-kuaile": "^5.2.8",
+    "@fontsource/zcool-xiaowei": "^5.2.8",
+    "@fontsource/zen-kurenaido": "^5.2.8",
+    "@pdf-lib/fontkit": "^1.1.1",
+    "hanzi-writer-data": "^2.0.1",
+    "html-to-image": "^1.11.13",
+    "lucide-react": "^0.468.0",
+    "lxgw-wenkai-screen-webfont": "^1.7.0",
+    "lxgw-wenkai-webfont": "^1.7.0",
+    "pdf-lib": "^1.17.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
