@@ -1,5 +1,7 @@
 # 汉字字帖生成器
 
+Help children practice handwriting.
+
 React + TypeScript + Tailwind CSS 实现的汉字字帖自动生成应用，支持笔顺、描红和空白练习模式，并使用 Hanzi Writer 开源笔顺数据绘制真实 SVG 笔画。
 
 ## 安装与运行
